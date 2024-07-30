@@ -1,0 +1,12 @@
+{
+  "factions": [
+    {
+      "id": "adeptus_mechanicus",
+      "name": "Adeptus Mechanicus"
+    },
+    {
+      "id": "adepta_sororitas",
+      "name": "Adepta Sororitas"
+    }
+  ]
+}

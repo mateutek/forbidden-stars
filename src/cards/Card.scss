@@ -1,0 +1,58 @@
+.card {
+  &-body {
+    @apply rounded-lg min-h-fit drop-shadow-md hover:drop-shadow-lg cursor-pointer transition w-full aspect-card flex flex-col overflow-hidden;
+  }
+  &-top {
+    @apply bg-cover bg-no-repeat h-full relative flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 60%;
+    max-height: 60%;
+
+    .title {
+      @apply absolute top-[5.75%] left-[26%] font-headliner text-center text-clamp-xl;
+    }
+  }
+
+  &-content {
+    @apply flex flex-col text-clamp;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: calc(40% - 1rem);
+    .text {
+      @apply px-6 pt-3 whitespace-pre-line;
+    }
+  }
+
+  &-general, &-unit {
+    @apply flex flex-col justify-center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  &-general {
+    @apply bg-cover bg-top bg-no-repeat;
+    background-image: url('/src/assets/images/general-bg.png');
+    z-index: 90;
+  }
+
+
+  &-unit {
+    @apply bg-cover bg-top bg-no-repeat px-3 pt-5 relative;
+    background-image: url('/src/assets/images/unit-bg.png');
+    top: -5px;
+    margin-bottom: -5px;
+    z-index: 100;
+  }
+
+  &-bottom {
+    @apply bg-cover bg-top bg-no-repeat;
+    min-height: 1rem;
+    max-height: 1rem;
+    background-image: url('/src/assets/images/bottom-bg.png');
+    z-index: 110;
+  }
+}

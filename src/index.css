@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'ForbiddenStars';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/src/fonts/forbiddenstars.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'FrizQuadrata';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/src/fonts/FrizQuadrataStd-Bold.otf) format("opentype");
+    }
+    @font-face {
+        font-family: 'HeadlinerNo45';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/src/fonts/headlinerno45.ttf) format('truetype');
+    }
+}
